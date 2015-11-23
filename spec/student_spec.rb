@@ -1,5 +1,6 @@
 require 'rspec'
 require 'date'
+require 'byebug'
 require_relative '../app/models/student'
 
 
@@ -54,6 +55,7 @@ describe Student, "validations" do
   end
 
   it "should accept valid info" do
+  
     expect(@student).to be_valid
   end
 
